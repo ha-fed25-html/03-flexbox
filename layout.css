@@ -1,0 +1,52 @@
+/* Normalisera CSS
+* {
+	padding: 0;
+	margin: 0;
+}
+*/
+
+.container {
+	background-color: black;
+	color: rgb(230, 191, 65);
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	/* Se till att border inkluderas i min-height */
+	box-sizing: border-box;
+	min-height: 100vh;
+	/* border: 20px dashed hotpink; */
+}
+
+header, main, footer {
+	padding: 1em;
+}
+
+header {
+	background-color: rgb(69, 69, 69);
+}
+main {
+	flex-grow: 1;
+}
+footer {
+	background-color: rgb(69, 69, 69);
+}
+
+
+.center-flex {
+	height: 5em;
+	background-color: rgb(40, 105, 30);
+	display: flex;
+
+	/* justify-content justerar items längs "main axis". align-items justerar längs "cross axis". */
+	justify-content: center;
+	align-items: center;
+}
+.center-flex > * {
+	border: 1px solid black;
+	background-color: rgb(183, 152, 106);
+	color: rgb(40, 105, 30);
+	flex-basis: 5em;
+	height:2.5em;
+}
