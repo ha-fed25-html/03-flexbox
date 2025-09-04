@@ -1,0 +1,36 @@
+.container {
+	margin: 0.5em;
+	border: 3px solid darkblue;
+	border-radius: 0.3em;
+	padding: 0.5em;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+}
+.wrap {
+	flex-wrap: wrap;
+}
+
+.container > * {
+	background-color: rgb(119, 119, 235);
+	padding: 0.8em;
+	border-radius: 0.3em;
+	flex-basis: 0px;
+}
+
+.grow-1 {
+	flex-grow: 1;
+}
+
+.shrink-1 {
+	flex-basis: 8em;
+	flex-shrink: 1;
+}
+.shrink-2 {
+	flex-basis: 8em;
+	flex-shrink: 2;
+}
+.basis {
+	flex-basis: 8em;
+}
