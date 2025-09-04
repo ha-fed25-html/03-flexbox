@@ -27,3 +27,70 @@ body {
 	grid-row: 2;
 	grid-column: 4;
 }
+
+
+:root {
+	/* Används i codepen-exemplet */
+	--dark-1: rgb(62, 62, 62);
+	--dark-2: rgb(136, 136, 136);
+	--dark-3: rgb(168, 168, 168);
+	--dark-4: rgb(214, 214, 214);
+}
+/* Tips för felsökning!
+* {
+	border: 3px dotted hotpink;
+}*/
+.codepen {
+	margin: 1em;
+	height: 16em;
+	display: grid;
+	/* Denna gap användes under utvecklingen */
+	/* gap: 2px; */
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto 1fr 1fr 1fr auto;
+}
+
+.header, .footer {
+	background-color: var(--dark-1);
+	color: var(--dark-4);
+	grid-column: span 2;
+}
+.html-area, .css-area, .js-area {
+	background-color: var(--dark-2);
+	border: 1px solid var(--dark-1);
+}
+.preview {
+	background-color: var(--dark-4);
+	grid-row: 2 / span 3;
+	grid-column: 2;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	align-items: center;
+	padding: 0.5em;
+}
+
+.header-container {
+	/* Detta kallas "Nested CSS" */
+	h1 {
+		margin: 0;
+		color: var(--dark-4);
+	}
+	p {
+		margin: 0;
+		color: var(--dark-3);
+	}
+}
+.separator {
+	flex-grow: 1;
+}
+.nav-button {
+	color: var(--dark-1);
+	background-color: var(--dark-3);
+	text-decoration: none;
+	border-radius: 0.4em;
+	padding: 0.3em 1em;
+}
