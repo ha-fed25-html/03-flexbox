@@ -1,0 +1,29 @@
+body {
+	background-color: rgb(251, 207, 246);
+}
+
+.mini {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 0.2em;
+	column-gap: 0.5em;
+}
+
+.mini > * {
+	border: 1px solid purple;
+	background-color: rgb(183, 71, 183);
+	padding: 0.4em;
+	border-radius: 0.4em;
+}
+
+.span-2 {
+	grid-column: span 2;
+}
+.grid-a {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+.grid-b {
+	grid-row: 2;
+	grid-column: 4;
+}
